@@ -128,3 +128,17 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = 'media/'
+
+# MENSAGENS
+from django.contrib.messages import constants
+MESSAGE_TAGS = {
+    constants.INFO: 'alert-info',
+    constants.DEBUG: 'alert-info',
+    constants.SUCCESS: 'alert-success',
+    constants.ERROR: 'alert-danger',
+    constants.WARNING: 'alert-warning ',
+
+}
