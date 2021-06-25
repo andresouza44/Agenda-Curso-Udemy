@@ -4,7 +4,7 @@ from django.core.validators import validate_email
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from .models import Contato, FormContato
-#teste
+
 def login (request):
     if request.method !='POST':
         return render(request, 'accounts/login.html')
